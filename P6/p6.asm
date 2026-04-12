@@ -8,7 +8,7 @@ section .data
 
 _start:                   
 
-	mov ebx, 0x5C4B2A60
+	mov ebx, 0x5C4B2A60 ;inciso a
     mov eax, 0x2219166
     add eax, ebx
 	call pHex_dw	
@@ -18,7 +18,7 @@ _start:
 	mov al,10	
 	call putchar ; fin inciso a
 
-	push bx
+	push bx ;inciso b
     mov ax, bx
     call pHex_w 
 
@@ -27,7 +27,7 @@ _start:
 	mov al,10 	
 	call putchar ; fin inciso B
 
-	mov al, 8
+	mov al, 8 ;inciso c
 	mul bl
     mov [N], ax
     call pHex_w
@@ -37,7 +37,7 @@ _start:
 	mov al,10 	
 	call putchar ;fin inciso c
 
-    inc byte[N]
+    inc byte[N] ;inciso d
     mov ax, [N]
     call pHex_w
 
@@ -46,7 +46,7 @@ _start:
 	mov al,10 	
 	call putchar ;fin inciso d
 
-    mov ax, bx
+    mov ax, bx ;inciso e
     mov bl, 0xFF
     div bl
     call pHex_b
@@ -63,7 +63,7 @@ _start:
 	mov al,10 	
 	call putchar ;fin inciso e
     
-	add [N], ah
+	add [N], ah ;inciso f
     mov ax, [N]
     call pHex_w
 
@@ -72,7 +72,7 @@ _start:
 	mov al,10 	
 	call putchar ;fin inciso f
 
-    dec byte[N] 	
+    dec byte[N] ;inciso g	
     mov ax, [N]
     call pHex_w
 
@@ -88,7 +88,7 @@ _start:
     mov al,10       
 	call putchar ;fin inciso g
 
-    pop ax
+    pop ax ;inciso h
     call pHex_w
 	
     mov al,10       
