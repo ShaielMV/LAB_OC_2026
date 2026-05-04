@@ -57,7 +57,7 @@ _start:
 
 	
     ; Procedimientos
-    capturar:  ;inciso a
+    capturar:   ;inciso a
         push ecx
 
         leer: call getche 
@@ -75,6 +75,7 @@ _start:
         pop ecx
     ret        ;fin inciso a
 
+
     desplegar: ;inciso b
         push ecx
 
@@ -88,6 +89,7 @@ _start:
         call saltoLinea
         pop ecx
     ret    ; fin inciso b
+
 
     sumaVectores: ;inciso c
         push ecx
@@ -103,6 +105,7 @@ _start:
         pop ebx
         pop ecx
     ret         ;fin inciso c
+
 
 
     puntoEscalar: 
