@@ -13,7 +13,7 @@ int main(){
     max = maxArray(arr,5);
 
     printf("Maximo: %d\n", max);
-    printf("Esperado: 90\n");
+    printf("Esperado: 110\n");
 
     return 0;
 }
